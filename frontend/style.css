@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f1115;
+  color: #e6e6e6;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 900px;
+  padding: 32px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  margin: 0 0 32px;
+  color: #8a8f98;
+  font-size: 0.9rem;
+}
+
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.chart-card {
+  background: #1a1d24;
+  border: 1px solid #262a33;
+  border-radius: 16px;
+  padding: 24px;
+  width: 320px;
+}
+
+.chart-card h2 {
+  margin: 0 0 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #c7cad1;
+}
+
+.chart-wrap {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+}
+
+.chart-center-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.detail {
+  margin: 12px 0 0;
+  color: #8a8f98;
+  font-size: 0.85rem;
+}

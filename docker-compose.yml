@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    container_name: sysmon-backend
+    ports:
+      - "5000:5000"
+    # Needed so psutil reports the HOST machine's real CPU/memory
+    # instead of the container's own limited view.
+    pid: "host"
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: sysmon-frontend
+    ports:
+      - "5050:80"
+    depends_on:
+      - backend
+    restart: unless-stopped

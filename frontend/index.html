@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>System Monitor</title>
+<link rel="stylesheet" href="style.css" />
+<script src="chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <h1>System Monitor</h1>
+    <p class="subtitle" id="status">Connecting…</p>
+
+    <div class="charts">
+      <div class="chart-card">
+        <h2>CPU Usage</h2>
+        <div class="chart-wrap">
+          <canvas id="cpuChart"></canvas>
+          <div class="chart-center-label" id="cpuLabel">0%</div>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <h2>Memory Usage</h2>
+        <div class="chart-wrap">
+          <canvas id="memChart"></canvas>
+          <div class="chart-center-label" id="memLabel">0%</div>
+        </div>
+        <p class="detail" id="memDetail"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
